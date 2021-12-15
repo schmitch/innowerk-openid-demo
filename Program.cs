@@ -35,8 +35,8 @@ builder.Services
         options.SaveTokens = false;
 
         // Use the authorization code flow.
-        options.ResponseType = OpenIdConnectResponseType.Code;
-        options.AuthenticationMethod = OpenIdConnectRedirectBehavior.RedirectGet;
+        options.ResponseType = OpenIdConnectResponseType.CodeIdToken;
+        options.AuthenticationMethod = OpenIdConnectRedirectBehavior.FormPost;
 
         // Note: setting the Authority allows the OIDC client middleware to automatically
         // retrieve the identity provider's configuration and spare you from setting
